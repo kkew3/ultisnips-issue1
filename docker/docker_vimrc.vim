@@ -1,7 +1,6 @@
 call plug#begin('~/.vim_plugged')
 
 Plug '/src/UltiSnips'
-Plug 'honza/vim-snippets'
 
 let g:UltiSnipsExpandTrigger="<tab>"
 
@@ -12,5 +11,7 @@ let g:UltiSnipsJumpForwardTrigger="2"
 let g:UltiSnipsJumpBackwardTrigger="1"
 
 let g:UltiSnipsEditSplit="vertical"
+
+autocmd BufRead,BufNewFile *.tex set filetype=tex
 
 call plug#end()
